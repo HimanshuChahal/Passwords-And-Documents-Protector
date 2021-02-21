@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/documentsCompleteRelativeLayout"
+    tools:context=".PDFDocumentsList">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/documentsListView"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-200dp"
+        android:visibility="invisible"
+        android:id="@+id/documentsRelativeLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Please Enter Your App Password"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/font2"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:id="@+id/documentsEnterPassEditText"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/background_dark"
+        android:text="DELETE"
+        android:textColor="@android:color/background_light"
+        android:textSize="25dp"
+        android:onClick="removeTheDocumentFromTheList"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

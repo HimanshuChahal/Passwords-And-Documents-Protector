@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".UserDetailsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20dp"
+        app:fontFamily="@font/font2"
+        android:text="Full Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20dp"
+        app:fontFamily="@font/font2"
+        android:text="ID (Email,etc)"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20dp"
+        app:fontFamily="@font/font2"
+        android:text="Password"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20dp"
+        app:fontFamily="@font/font2"
+        android:text="Confirm Pass"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="Please remember the above details
+as \nthey might be helpful in case you forget \n
+your password."/>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="180dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:id="@+id/yourName"/>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="180dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:id="@+id/yourId"/>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="180dp"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        android:hint="App Password"
+        android:textColorHint="@android:color/darker_gray"
+        android:id="@+id/appPass"/>
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="180dp"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:textColor="@android:color/background_light"
+        android:hint="App Password"
+        android:singleLine="true"
+        android:textColorHint="@android:color/darker_gray"
+        android:id="@+id/confirmAppPass"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="380dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:text="SUBMIT"
+        app:fontFamily="@font/font2"
+        android:background="@drawable/button_edits"
+        android:onClick="submitDetails"/>
+
+</RelativeLayout>

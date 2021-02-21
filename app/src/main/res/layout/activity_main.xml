@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/relative_layout_edits">
+
+    <ImageView
+        android:layout_width="340dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/protect"
+        android:id="@+id/protectImageView"/>
+
+    <TextView
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:text="YOUR PASSWORDS AND DOCUMENTS ARE SAFE HERE"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="35dp"
+        app:fontFamily="@font/font2"
+        android:textStyle="bold"
+        android:id="@+id/protectTextView"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/myandroidguide"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="200dp"
+        android:visibility="invisible"
+        android:id="@+id/myAppGuideImageView"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/textbox"
+        android:textSize="35dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="22dp"
+        android:paddingBottom="25dp"
+        android:text="WELCOME"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:fontFamily="@font/font2"
+        android:id="@+id/myAppGuideTextView"/>
+
+</RelativeLayout>
